@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  
+  nav.fixed-top {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: none; /* No shadow initially */
+  }
+  
+  /* Shadow effect when scrolling */
+  nav.fixed-top.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a light bottom shadow when scrolling */
+  }
+  
+  .moving-image {
+    animation: moveUpDown 3s ease-in-out infinite;
+  }
+  
+  @keyframes moveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+  }
+  
+  /* double tick icon in list */
+  .custom-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  .custom-list li {
+    background-image: url("./assets/custom-icon.png"); /* Path to your custom icon */
+    background-repeat: no-repeat;
+    background-size: 20px 20px; /* Adjust size of the icon */
+    background-position: 0 50%; /* Center the icon vertically */
+    padding-left: 25px; /* Space for the icon */
+  }
+  
+  /* email input button size custom */
+  .custom-email-input {
+    max-width: 600px; /* Set desired maximum width */
+    width: 100%; /* Ensure it uses full width within the max limit */
+  }
+  
+  /* Change link color to green on hover */
+  .navbar-nav .nav-item a:hover {
+    color: red !important; /* Green color */
+  }
+  
+  /* Custom style for nested dropdowns */
+  .dropdown-menu .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+  
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  
+  /* Hides the hamburger icon */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Media query for screens smaller than 600px */
+  @media screen and (max-width: 600px) {
+    /* Hide all links except the first one (Home) */
+    .topnav ul li { display: none; }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav ul.responsive {
+      position: relative;
+    }
+    /* Show all links when the responsive class is added */
+    .topnav.responsive ul li {
+      display: block;
+      text-align: left;
+    }
+     /* Ensure the Get Started button stays visible */
+    .topnav.responsive ul li:last-child {
+      display: block !important;
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    /* Make the Get Started button full-width */
+    .topnav.responsive ul li button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  
+.hero img
+   {
+    padding-top: 100px;
+    top: 0;
+        
+        animation: moveUpDown 10s ease-in-out infinite; /* Apply animation */
+    }
+
+    /* Keyframes for moving the image up and down */
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0); /* Initial position */
+        }
+        50% {
+            transform: translateY(-50px); /* Move up by 50px */
+        }
+        100% {
+            transform: translateY(0); /* Move back to original position */
+        }
+    }
+    .hero-cnt{
+        padding-top: 100px;
+    }
+    .hero-cnt a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+
+    }
+    .hero-cnt a:hover{
+        color: green;
+    }
+    .hero-cnt i{
+        color: green;
+        font-size: 30px;
+       
+        
+        
+    }
+    
+    
+    .s2{
+        border: 1px solid hwb(0 95% 3%);
+        background-color: hwb(0 95% 3%);
+        justify-content: space-between;
+        padding: 20px;
+      
+        
+    }
+    .s2 i{
+        font-size: 50px;
+        color: green;
+        
+    }
+    .s2:hover{
+       
+           
+           
+            transition: transform 0.4s ease; /* Smooth transition */
+        
+            transform: translateY(-20px); /* Move up by 20px */
+        }
+        .s h3:hover{
+            color: green;
+        }
+    .shadow h1{
+        overflow: hidden;
+        color: rgb(234, 236, 241);
+       font-weight: 700;
+      
+       
+    }
+    .shadow h3{
+      margin-top: -25px;
+      color: rgb(42, 41, 41);
+        
+    }
+    .list li{
+        list-style-type: none;
+       list-style-position:inside;
+    }
+    .list{
+        width: 70%;
+        padding-right: 50px;
+       
+
+    }
+    .count{
+        justify-content: space-around;
+    }
+    .s3 h1{
+        overflow: hidden;
+        color: rgb(234, 236, 241);
+       font-weight: 700;
+       
+
+
+    }
+    .s3{
+        
+
+    }
+    .s3 h3{
+        margin-top: -25px;
+      color: rgb(42, 41, 41);
+      padding-bottom: 5px;
+    }
+
+    
+.card h2{
+    color: gray;
+}
+
+
+.card:hover{
+    border-color: green ;
+}
+.card h2:hover{
+    color: green;
+}   
+
+
+.prt h1{
+    overflow: hidden;
+    color: rgb(234, 236, 241);
+    font-weight: 700;
+
+}
+.prt h3{
+    margin-top: -25px;
+    padding-bottom: 10px;
+}
+.s4{
+    display: flex;
+    justify-content: center;
+   gap: 20px;
+   
+}
+.s4 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.nav-item {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: green; /* Optional hover effect */
+  }
+.trans{
+    border: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter:blur(2px);
+    margin-top: -135px;
+    background-color: whitesmoke ;
+  padding: 8px;
+   visibility: hidden;
+   color: gray;
+
+}
+
+
+.img:hover .trans {
+    visibility: visible;
+}
+.trans i:hover{
+    color: green;
+}
+.s5 h1{
+    overflow: hidden;
+    color: rgb(234, 236, 241);
+    font-weight: 700;
+
+}
+.s5 h3{
+    margin-top: -25px;
+}
+.about h1{
+    overflow: hidden;
+    color: rgb(234, 236, 241);
+    font-weight: 700;
+
+}
+.about h3{
+    margin-top: -25px;
+}
+
+.call{
+    padding:80px;
+}
+.team-i{
+    color: gray;
+    font-size: larger;
+}
+.mt{
+    margin-top: -60px;
+    background-color:white;
+    position: absolute;
+    
+    
+}
+.sp{
+    gap: 150px;
+}
+.map{
+    width: 500px;
+}
+.map i{
+    color: green;
+    font-size:30px;
+    background-color: rgb(196, 206, 206);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.ma{
+   
+}
+.map i:hover{
+    background-color: rgb(82, 155, 82);
+
+}
+.test{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+.cont h1{
+    overflow: hidden;
+    color: rgb(234, 236, 241);
+    font-weight: 700;
+
+}
+.cont h3{
+    margin-top: -25px;
+   
+}
+.contact {
+    margin-top: 150px;
+  }
+  .portfoliowm {
+    color: rgba(226, 223, 223, 0.8);
+  }  
+  .newsletter {
+    background-color: snow;
+  }
+  /* scroll up */
+
+.scroll-arrow{
+
+    position: sticky;
+    left: 95%;
+    bottom: 10px;
+    --offset:100px;
+    margin-top: calc(100vh + var(--offset));
+  }
